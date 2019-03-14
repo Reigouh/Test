@@ -1,0 +1,13 @@
+#include<cstring>
+#include<cstdio>
+#include<cstring>
+#include<ctime>
+#include<cconio.h>
+#include<iostream>
+using namespace std;
+const int dd[4][2]={{1,0},{0,1},{-1,0},{0,-1}}
+char map[22][32]
+int d,fx,fy,score
+bool eat;
+struct body
+{
