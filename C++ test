@@ -6,7 +6,7 @@
 #include<iostream>
 using namespace std;
 const int dd[4][2]={{1,0},{0,1},{-1,0},{0,-1}}
-char map[22][32]
+char map[33][53]
 int d,fx,fy,score
 bool eat;
 struct body
@@ -56,12 +56,12 @@ void print()
     system("cls");
     for(int i=0;i<22;i++)
         puts(map[i]);
-    printf("Your score:%d\n",score);
+    printf("How many point you get:%d\n",score);
 }
 void Update(body *u,int x,int y)
 {
     if(map[x][y]=='#'||map[x][y]=='-'||map[x][y]=='|')
-    {cout<<"Game over!"<<endl;MessageBox(NULL,"Game over!","Game over!",NULL);exit(0);}
+    {cout<<"You SUCK BUT Thank You! Have Fun!"<<endl;MessageBox(NULL,"Thanks!","Thanks!",NULL);exit(0);}
     if(u==NULL)return;
     if(u->last!=NULL||eat==0)
         map[u->x][u->y]=' ';
